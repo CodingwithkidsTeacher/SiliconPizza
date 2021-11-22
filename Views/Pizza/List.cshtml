@@ -1,0 +1,12 @@
+﻿
+@model PizzasListViewModel
+
+<h1>@Model.CurrentCategory</h1>
+
+<div class="pizzaList">
+    @foreach (var pizza in Model.Pizzas)
+    {
+      <partial name="_PizzaCard" model="pizza" />
+    }
+</div>
+
